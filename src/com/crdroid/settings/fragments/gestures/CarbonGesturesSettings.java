@@ -36,9 +36,9 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.Utils;
 
-import com.android.settings.carbon.CustomSeekBarPreference;
-import com.crdroid.settings.fragments.privacy.hideappfromrecents.HAFRAppChooserAdapter.AppItem;
-import com.crdroid.settings.fragments.privacy.hideappfromrecents.HAFRAppChooserDialog;
+import com.crdroid.settings.preferences.CustomSeekBarPreference;
+import com.crdroid.settings.fragments.hideappfromrecents.HAFRAppChooserAdapter.AppItem;
+import com.crdroid.settings.fragments.hideappfromrecents.HAFRAppChooserDialog;
 
 public class CarbonGesturesSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -123,7 +123,7 @@ public class CarbonGesturesSettings extends SettingsPreferenceFragment implement
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.CARBONFIBERS;
+        return MetricsEvent.CRDROID_SETTINGS;
     }
 
     @Override
